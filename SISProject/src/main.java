@@ -6,7 +6,7 @@ public class main
 			{
 				System.out.println("Down with the leader");
 				System.out.println("Up with the dog");
-				System.out.println("Viva Revolution ");
+				System.out.println("Viva Revolution  ");
 			}
 
 	}
