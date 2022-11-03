@@ -1,7 +1,5 @@
 
-public class main
-	{
-
+public class main{
 		public static void main(String[] args)
 			{
 				System.out.println("Down with the leader");
@@ -10,6 +8,5 @@ public class main
 				
 				
 				System.out.println("hh");
-			}
 
-	}
+}
