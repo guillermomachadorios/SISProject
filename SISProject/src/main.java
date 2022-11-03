@@ -8,5 +8,5 @@ public class main{
 				System.out.println("Commit and Push");
 				//send ur mom my love <3
 		}
-
+ 
 }
