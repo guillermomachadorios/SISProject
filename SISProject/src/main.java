@@ -5,6 +5,6 @@ public class main{
 				System.out.println("RISE!!!");
 				System.out.println("REBEL!!!");
 				System.out.println("Viva La revolution!!!");
-				System.out.println("Para Gordo perros");
+				System.out.println("Para perros gordos");
 			}
 }
