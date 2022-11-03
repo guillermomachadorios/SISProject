@@ -5,6 +5,7 @@ public class main{
 			
 				System.out.println("yahoo");
 				System.out.println("iowhiorgq");
+				System.out.println("Commit and Push");
 		}
 
 }
