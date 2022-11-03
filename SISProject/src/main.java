@@ -4,9 +4,9 @@ public class main
 
 		public static void main(String[] args)
 			{
-				System.out.println("yahoo");
-				System.out.println("iowhiorgq");
-				System.out.println("dog");
+				System.out.println("Down with the leader");
+				System.out.println("Up with the dog");
+				System.out.println("Viva Revolution ");
 			}
 
 	}
