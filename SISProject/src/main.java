@@ -15,7 +15,7 @@ public class main{
 			System.out.println("How would you like to sort the student?");
             System.out.println("(1) Name");
             System.out.println("(2) GPA");
-            System.out.println("(3) Period");
+       
           
             
             Scanner userInput = new Scanner(System.in);
@@ -34,11 +34,6 @@ public class main{
 
             
         }
-         else if(menuChoice == 3)
-          {
-           
-
-            
-        }
+        
 		}
 }
