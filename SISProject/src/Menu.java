@@ -36,6 +36,7 @@ public class Menu {
 			}else if(answer == 3) {
 				
 				ask = false;
+				//
 				System.out.println("sort");
 				//sort();
 			}else {
