@@ -1,5 +1,4 @@
 import java.util.Scanner;
-//import java.util.concurrent.TimeUnit;
 
 public class Menu {
 
@@ -10,58 +9,7 @@ public class Menu {
 		
 		System.out.println("PRESS KEY");
 		pause = userStringInput.nextLine();
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
 		System.out.println("GENERATING LIST");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");
-		System.out.println("");      
-		System.out.println("");
-		//Thread.sleep(7000);
-		//TimeUnit.SECONDS.sleep(7);
-		System.out.println("GENERATING LIST.");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("GENERATING LIST..");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("");
-//		System.out.println("GENERATING LIST...");
-		
-		
 		pause = userStringInput.nextLine();
 		
 		boolean ask = true;
