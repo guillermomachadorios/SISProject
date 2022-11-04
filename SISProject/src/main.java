@@ -34,6 +34,13 @@ public class main{
 
             
         }
+            else if(menuChoice == 3)
+                {
+                      System.out.println("");
+                      Collections.sort(Students, new periodSorter());
+
+                  
+              }
         
 		}
 }
