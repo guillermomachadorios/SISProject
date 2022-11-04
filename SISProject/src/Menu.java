@@ -10,6 +10,7 @@ public class Menu {
 		System.out.println("PRESS KEY");
 		pause = userStringInput.nextLine();
 		System.out.println("GENERATING LIST");
+
 		pause = userStringInput.nextLine();
 		
 		boolean ask = true;
