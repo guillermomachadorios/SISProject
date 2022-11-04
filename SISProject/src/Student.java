@@ -1,5 +1,5 @@
 
-public class studentPojo	
+public class student	
 	{
 	  private String name;
 	  private String last;
@@ -11,7 +11,7 @@ public class studentPojo
 	  private String periodThree;
 	  private String gradeThree;
 	  
-	  public studentPojo (String n, String l, double g, String pO, String gO, String pT, String gT, String pTr, String gTr)
+	  public student (String n, String l, double g, String pO, String gO, String pT, String gT, String pTr, String gTr)
 	    {
 	    name = n;
 	    last = l;
@@ -45,12 +45,12 @@ public class studentPojo
 			this.last = last;
 		}
 
-	public double getGpa()
+	public double getGPA()
 		{
 			return gpa;
 		}
 
-	public void setGpa(double gpa)
+	public void setGPA(double gpa)
 		{
 			this.gpa = gpa;
 		}
