@@ -38,7 +38,7 @@ public class main{
                 {
                       System.out.println("");
                       Collections.sort(Students, new periodSorter());
-
+                      System.out.println(" ");
                   
               }
         
