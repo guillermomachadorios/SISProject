@@ -1,6 +1,6 @@
 
-public class Student
-	    {
+public class Student	
+	{
 	  private String name;
 	  private String last;
 	  private double gpa;
@@ -45,12 +45,12 @@ public class Student
 			this.last = last;
 		}
 
-	public double getGpa()
+	public double getGPA()
 		{
 			return gpa;
 		}
 
-	public void setGpa(double gpa)
+	public void setGPA(double gpa)
 		{
 			this.gpa = gpa;
 		}
@@ -113,5 +113,5 @@ public class Student
 	public void setGradeThree(String gradeThree)
 		{
 			this.gradeThree = gradeThree;
-		}
-	   }
+		}	   
+	  }
