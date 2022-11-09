@@ -1,7 +1,7 @@
 
 import java.util.Comparator;
 
-public class nameSorter implements Comparator<Student>
+public class NameSorter implements Comparator<Student>
     {
     public int compare(Student s1, Student s2)
         {
