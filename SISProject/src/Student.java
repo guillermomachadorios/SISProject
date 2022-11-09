@@ -1,5 +1,5 @@
 
-public class studentPojo
+public class Student
 	    {
 	  private String name;
 	  private String last;
@@ -11,7 +11,7 @@ public class studentPojo
 	  private String periodThree;
 	  private String gradeThree;
 	  
-	  public studentPojo (String n, String l, double g, String pO, String gO, String pT, String gT, String pTr, String gTr)
+	  public Student (String n, String l, double g, String pO, String gO, String pT, String gT, String pTr, String gTr)
 	    {
 	    name = n;
 	    last = l;
