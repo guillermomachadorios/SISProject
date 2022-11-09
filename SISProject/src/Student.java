@@ -113,8 +113,5 @@ public class Student
 	public void setGradeThree(String gradeThree)
 		{
 			this.gradeThree = gradeThree;
-		}
-	  
-	   
+		}	   
 	  }
-
