@@ -24,7 +24,7 @@ public class main{
             if(menuChoice == 1)
             {
                 System.out.println("");
-                Collections.sort(Students, new nameSorter());
+                Collections.sort(Students, new NameSorter());
 
             }
             else if(menuChoice == 2)
@@ -37,7 +37,7 @@ public class main{
             else if(menuChoice == 3)
                 {
                       System.out.println("");
-                      Collections.sort(Students, new periodSorter());
+                      Collections.sort(Students, new PeriodSorter());
                       System.out.println(" ");
                   
               }

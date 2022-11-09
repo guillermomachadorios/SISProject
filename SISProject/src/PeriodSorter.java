@@ -1,7 +1,7 @@
 
 import java.util.Comparator;
 
-public class periodSorter implements Comparator<Student>
+public class PeriodSorter implements Comparator<Student>
     {
     public int compare(Song s1, Song s2)
         {
