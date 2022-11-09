@@ -25,20 +25,16 @@ public class Menu {
 			System.out.println("   3) SORT students");
 			int answer = userIntInput.nextInt();
 
-			if(answer == 1) {
-				
+			if(answer == 1) {				
 				//ask = false;
 				//add/delete();
-			}else if(answer == 2) {
-				
+			}else if(answer == 2) {				
 				//ask = false;
 				GradeScheduleChange.main(args);
 			}else if(answer == 3) {
-				
 				//ask = false;
 				main.sorting();
-			}else {
-				
+			}else {				
 				System.out.println("Please chose a valid answer.");
 				ask = true;
 			}
