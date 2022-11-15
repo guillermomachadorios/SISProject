@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Menu {
@@ -5,8 +6,9 @@ public class Menu {
 	static Scanner userStringInput = new Scanner(System.in);
 	static String pause = "";
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		
+		Roster.fillRoster();
 		System.out.println("PRESS KEY");
 		pause = userStringInput.nextLine();
 		System.out.println("GENERATING LIST");

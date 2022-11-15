@@ -6,9 +6,9 @@ import java.util.Collections;
 //Colin's file stuff, i swear to god if you break this...
 public class Roster
 	{
-	public void fillRoster() throws IOException
+	public static ArrayList <Student> roster = new ArrayList <Student>();
+	public static void fillRoster() throws IOException
 		{
-		ArrayList <Student> roster = new ArrayList <Student>();
 		Scanner file = new Scanner(new File( "studentData.txt" ));
 		while(file.hasNext())
 			{

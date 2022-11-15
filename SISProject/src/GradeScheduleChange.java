@@ -20,6 +20,7 @@ public class GradeScheduleChange
 		public static void gradeChanger() {
 			Student evan = new Student ("evan", "limani", 2.00, "english", "B", "math", "B-", "science", "C+");
 			String gradeChange = "";
+			System.out.println(Roster.roster);
 			System.out.println("Who's grade would you like to change?");
 			System.out.println("1. " + evan.getName() +" "+ evan.getLast() +" "+ evan.getGPA() +" "+ evan.getPeriodOne() +" "+ evan.getGradeOne() +" "+ evan.getPeriodTwo() +" "+ evan.getGradeTwo() +" "+ evan.getPeriodThree() +" "+ evan.getGradeThree());
 			choice = userIntInput.nextInt();
