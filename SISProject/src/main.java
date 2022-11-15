@@ -13,8 +13,8 @@ public class main{
 		public static void sorting() 
 		{
 			System.out.println("How would you like to sort the student?");
-            System.out.println("(1) Name");
-            System.out.println("(2) GPA");
+            System.out.println("   1) Name");
+            System.out.println("   2) GPA");
        
           
             
@@ -24,7 +24,7 @@ public class main{
             if(menuChoice == 1)
             {
                 System.out.println("");
-                Collections.sort(Students, new nameSorter());
+                Collections.sort(Students, new NameSorter());
 
             }
             else if(menuChoice == 2)
@@ -37,8 +37,8 @@ public class main{
             else if(menuChoice == 3)
                 {
                       System.out.println("");
-                      Collections.sort(Students, new periodSorter());
-
+                      Collections.sort(Students, new PeriodSorter());
+                      System.out.println(" ");
                   
               }
         
