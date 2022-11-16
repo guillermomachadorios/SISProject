@@ -15,6 +15,7 @@ public class main{
 			System.out.println("How would you like to sort the student?");
             System.out.println("   1) Name");
             System.out.println("   2) GPA");
+            System.out.println("   3) Period");
        
           
             
@@ -24,20 +25,20 @@ public class main{
             if(menuChoice == 1)
             {
                 System.out.println("");
-                Collections.sort(Students, new NameSorter());
+                Collections.sort(Roster.roster, new NameSorter());
 
             }
             else if(menuChoice == 2)
           {
                 System.out.println("");
-                Collections.sort(Students, new GPASorter());
+                Collections.sort(Roster.roster, new GPASorter());
 
             
         }
             else if(menuChoice == 3)
                 {
                       System.out.println("");
-                      Collections.sort(Students, new PeriodSorter());
+                      Collections.sort(Roster.roster, new PeriodSorter());
                       System.out.println(" ");
                   
               }
