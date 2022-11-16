@@ -25,20 +25,20 @@ public class main{
             if(menuChoice == 1)
             {
                 System.out.println("");
-                Collections.sort(roster, new NameSorter());
+                Collections.sort(Roster.roster, new NameSorter());
 
             }
             else if(menuChoice == 2)
           {
                 System.out.println("");
-                Collections.sort(roster, new GPASorter());
+                Collections.sort(Roster.roster, new GPASorter());
 
             
         }
             else if(menuChoice == 3)
                 {
                       System.out.println("");
-                      Collections.sort(roster, new PeriodSorter());
+                      Collections.sort(Roster.roster, new PeriodSorter());
                       System.out.println(" ");
                   
               }
