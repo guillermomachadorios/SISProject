@@ -146,7 +146,7 @@ public class Roster
 				gpa = gpa+0.0;
 				break;
 		}
-		gpa = d.format(gpa/3);	
+		gpa = gpa/3;	
 			
 			roster.add(new Student(firstName, lastName, gpa, periodOne, gradeOne, periodTwo, gradeTwo, periodThree, gradeThree));
 			}

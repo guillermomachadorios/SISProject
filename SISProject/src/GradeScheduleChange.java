@@ -1,7 +1,9 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class GradeScheduleChange
 	{
+		static DecimalFormat d = new DecimalFormat("0.00");   
 		static Scanner userIntInput = new Scanner(System.in);
 		static Scanner userStringInput = new Scanner(System.in);
 		static int choice = 0;
@@ -22,7 +24,7 @@ public class GradeScheduleChange
 			String gradeChange = "";
 			System.out.println("Who's grade would you like to change?");
 			for(int i=0; i<Roster.roster.size(); i++) {
-				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ Roster.roster.get(i).getGPA() +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
+				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ d.format(Roster.roster.get(i).getGPA()) +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
 			}			
 			studentChoice = userIntInput.nextInt()-1;
 			System.out.println("Choose a grade to change.");
@@ -50,13 +52,138 @@ public class GradeScheduleChange
 				Roster.roster.get(studentChoice).setGradeThree(gradeChange);
 				System.out.println(Roster.roster.get(studentChoice).getName() +" "+ Roster.roster.get(studentChoice).getLast()+"'s current grade for " + Roster.roster.get(studentChoice).getPeriodThree() + " is now "+ Roster.roster.get(studentChoice).getGradeThree() + ".");
 			}
+			double gpa=0;
+			switch (Roster.roster.get(studentChoice).getGradeOne()) {
+			case "A+":
+				gpa = gpa+4.0;
+				break;
+			case "A":
+				gpa = gpa+4.0;
+				break;
+			case "A-":
+				gpa = gpa+3.7;
+				break;
+			case "B+":
+				gpa = gpa+3.3;
+				break;
+			case "B":
+				gpa = gpa+3.0;
+				break;
+			case "B-":
+				gpa = gpa+2.7;
+				break;
+			case "C+":
+				gpa = gpa+2.3;
+				break;
+			case "C":
+				gpa = gpa+2.0;
+				break;
+			case "C-":
+				gpa = gpa+1.7;
+				break;
+			case "D+":
+				gpa = gpa+1.3;
+				break;
+			case "D":
+				gpa = gpa+1.0;
+				break;
+			case "D-":
+				gpa = gpa+0.7;
+				break;
+			case "F":
+				gpa = gpa+0.0;
+				break;
+		}
+		switch (Roster.roster.get(studentChoice).getGradeTwo()) {
+		case "A+":
+			gpa = gpa+4.0;
+			break;
+		case "A":
+			gpa = gpa+4.0;
+			break;
+		case "A-":
+			gpa = gpa+3.7;
+			break;
+		case "B+":
+			gpa = gpa+3.3;
+			break;
+		case "B":
+			gpa = gpa+3.0;
+			break;
+		case "B-":
+			gpa = gpa+2.7;
+			break;
+		case "C+":
+			gpa = gpa+2.3;
+			break;
+		case "C":
+			gpa = gpa+2.0;
+			break;
+		case "C-":
+			gpa = gpa+1.7;
+			break;
+		case "D+":
+			gpa = gpa+1.3;
+			break;
+		case "D":
+			gpa = gpa+1.0;
+			break;
+		case "D-":
+			gpa = gpa+0.7;
+			break;
+		case "F":
+			gpa = gpa+0.0;
+			break;
+	}
+		switch (Roster.roster.get(studentChoice).getGradeThree()) {
+		case "A+":
+			gpa = gpa+4.0;
+			break;
+		case "A":
+			gpa = gpa+4.0;
+			break;
+		case "A-":
+			gpa = gpa+3.7;
+			break;
+		case "B+":
+			gpa = gpa+3.3;
+			break;
+		case "B":
+			gpa = gpa+3.0;
+			break;
+		case "B-":
+			gpa = gpa+2.7;
+			break;
+		case "C+":
+			gpa = gpa+2.3;
+			break;
+		case "C":
+			gpa = gpa+2.0;
+			break;
+		case "C-":
+			gpa = gpa+1.7;
+			break;
+		case "D+":
+			gpa = gpa+1.3;
+			break;
+		case "D":
+			gpa = gpa+1.0;
+			break;
+		case "D-":
+			gpa = gpa+0.7;
+			break;
+		case "F":
+			gpa = gpa+0.0;
+			break;
+	}
+		Roster.roster.get(studentChoice).setGPA(gpa);
 		}
 		
 		public static void scheduleChanger() {
 			String scheduleChange = "";
 			System.out.println("Who's schedule would you like to change?");
 			for(int i=0; i<Roster.roster.size(); i++) {
-				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ Roster.roster.get(i).getGPA() +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
+				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ d.format(Roster.roster.get(i).getGPA()) +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
 			}
 			studentChoice = userIntInput.nextInt()-1;
 			System.out.println("Choose a period to swap.");

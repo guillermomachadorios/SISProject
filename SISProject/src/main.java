@@ -1,8 +1,9 @@
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.text.DecimalFormat;
 public class main{
-		   
+		static DecimalFormat d = new DecimalFormat("0.00");   
 		public static void sorting() 
 		{
 			System.out.println("How would you like to sort the student?");
@@ -20,7 +21,7 @@ public class main{
                 System.out.println("");
                 Collections.sort(Roster.roster, new NameSorter());
                 for(int i=0; i<Roster.roster.size(); i++) {
-    				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ Roster.roster.get(i).getGPA() +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
+    				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ d.format(Roster.roster.get(i).getGPA()) +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
     			}
 
             }
@@ -29,7 +30,7 @@ public class main{
                 System.out.println("");
                 Collections.sort(Roster.roster, new GPASorter());
                 for(int i=0; i<Roster.roster.size(); i++) {
-    				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ Roster.roster.get(i).getGPA() +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
+    				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ d.format(Roster.roster.get(i).getGPA()) +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
     			}
             
         }
@@ -38,7 +39,7 @@ public class main{
                       System.out.println("");
                       Collections.sort(Roster.roster, new PeriodSorter());
                       for(int i=0; i<Roster.roster.size(); i++) {
-          				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ Roster.roster.get(i).getGPA() +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
+          				System.out.println((i+1)+". " + Roster.roster.get(i).getName() +" "+ Roster.roster.get(i).getLast() +" "+ d.format(Roster.roster.get(i).getGPA()) +" "+ Roster.roster.get(i).getPeriodOne() +" "+ Roster.roster.get(i).getGradeOne() +" "+ Roster.roster.get(i).getPeriodTwo() +" "+ Roster.roster.get(i).getGradeTwo() +" "+ Roster.roster.get(i).getPeriodThree() +" "+ Roster.roster.get(i).getGradeThree());
           			}
                   
               }

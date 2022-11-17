@@ -28,17 +28,13 @@ public class Menu {
 			int answer = userIntInput.nextInt();
 
 			if(answer == 1) {				
-				//ask = false;
-				//add/delete();
+				StudentDeleterAdder.main(args);
 			}else if(answer == 2) {				
-				//ask = false;
 				GradeScheduleChange.main(args);
 			}else if(answer == 3) {
-				//ask = false;
 				main.sorting();
 			}else {				
 				System.out.println("Please chose a valid answer.");
-				ask = true;
 			}
 		}
 
